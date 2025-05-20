@@ -3,6 +3,7 @@ from dash import Dash, html, page_container
 import dash_bootstrap_components as dbc
 
 app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 navbar = dbc.NavbarSimple(
     brand="🧠 Mental Health Dashboard",
